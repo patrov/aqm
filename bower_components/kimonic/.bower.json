@@ -1,0 +1,38 @@
+{
+  "name": "kimonic",
+  "authors": [
+    "Harris Baptiste <harris.baptiste@gmail.com>"
+  ],
+  "description": "Kimonic js Framework",
+  "main": "kimonic/main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "handlebars": "~3.0.0",
+    "requirejs": "~2.1.14",
+    "requirejs-text": "~2.0.12",
+    "fontawesome": "*",
+    "mustache": "*",
+    "nanoscroller": "*",
+    "crossroads": "*",
+    "signals": "*",
+    "hasher": "*",
+    "cryptojslib": "*",
+    "bootstrap": "*",
+    "moment": "*"
+  },
+  "_release": "c6916972fa",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c6916972fa868939a6914d8a1236dc86302ebb93"
+  },
+  "_source": "/Users/hbaptiste/projects/opennote/kimonic",
+  "_target": "*",
+  "_originalSource": "./kimonic",
+  "_direct": true
+}

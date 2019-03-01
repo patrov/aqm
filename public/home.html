@@ -39,19 +39,9 @@
                 }
             })
             require(["kimo.core","readlist.app"], function(s, Core) {
-               
-                require(["ReadList"], (Readlist) => {
-                    $.ajax({
-                        dataType: "html",
-                        url: "/js/apps/readlist/templates/editcontent.tpl",
-                    }).done((response) => {
-                        $(response).appendTo("body");
-                        Kimo.ApplicationManager.start("ReadList")
-                    })
+                    require(["ReadList"], (Readlist) => {
+                    Kimo.ApplicationManager.start("ReadList")
                 })
-            },(reason) => { 
-                console.log("=== Error ===")
-                console.log(reason)
             })
         </script>
     </head>

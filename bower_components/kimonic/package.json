@@ -1,0 +1,12 @@
+{
+    "name": "kimonic",
+    "version": "0.1.0",
+	"author": "Patrov <d.patrov@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nodejitsu/browsenpm.org"
+	},
+    "dependencies": {
+        "jsclass": "4.0.5",
+    }
+}
