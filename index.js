@@ -10,7 +10,7 @@ const path = require("path")
 app.use('/js', express.static('src'))
 app.use('/static', express.static("public"))
 app.use('/libs/', express.static("bower_components"))
-app.use(express.static('/static'))
+app.use(express.static(path.join(__dirname,'public')))
 
 // error handler
 app.get('/home', (req, res) => {
