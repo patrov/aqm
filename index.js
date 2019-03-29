@@ -1,15 +1,24 @@
 const express = require('express')
+const bodyparser = require('body-parser') 
 const app = express()
 const port = 3000
 const path = require("path")
-/* app.use('/static', express.static(path.join(__dirname, 'public'))) */
-//__filename
-//__dirname
+
+const router = require("./src/rest")
+
+/* console.log */
 
 // app settings
+app.use(bodyparser.json())
+app.use(bodyparser.urlencoded({ extended: true }))
+
+/* radical blaze */
 app.use('/js', express.static('src'))
 app.use('/static', express.static("public"))
 app.use('/libs/', express.static("bower_components"))
+
+app.use('/api/', router)
+
 app.use(express.static(path.join(__dirname,'public')))
 
 // error handler

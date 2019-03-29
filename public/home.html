@@ -38,8 +38,8 @@
                      "readlist.app": "apps/readlist/main"
                 }
             })
-            require(["kimo.core","readlist.app"], function(s, Core) {
-                    require(["ReadList"], (Readlist) => {
+            require(["kimo.core","readlist.app"], function() {
+                require(["ReadList"], (Readlist) => {
                     Kimo.ApplicationManager.start("ReadList")
                 })
             })

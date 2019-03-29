@@ -25,8 +25,13 @@
   },
   "homepage": "https://github.com/patrov/opennote#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "loopback-cli": "^5.0.0",
-    "rm": "^0.1.8"
+    "rm": "^0.3.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.11",
+    "uuid": "^3.3.2"
   }
 }
