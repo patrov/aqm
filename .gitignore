@@ -1,0 +1,4 @@
+src/apps/*
+src/kimonic/*
+bower_components/*
+node_modules/*
