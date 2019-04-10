@@ -22,8 +22,14 @@ app.use('/api/', router)
 app.use(express.static(path.join(__dirname,'public')))
 
 // error handler
+
 app.get('/home', (req, res) => {
 	res.sendFile(path.join(__dirname, "public", "home.html"))
 })
+
+app.get("/harris",(req,res) => {
+	res.send("Harris")
+})
+
 /* start the server */
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
